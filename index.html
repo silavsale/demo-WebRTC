@@ -19,12 +19,24 @@
             <h2>Reception</h2>
             <video controls id="receiver-video" width="100%" height="400px"></video>
             <p>
-                <button id="start">Start conversation</button>
+                <button id="start" class="btn btn-primary">Start conversation</button>
             </p>
+            <textarea id="offer" class="form-control"></textarea>
         </div>
         <div class="col-sm-6">
             <h2>Send</h2>
             <video controls id="emitter-video" width="100%" height="400px"></video>
+            <p>
+                <button id="receive" class="btn btn-primary">Receive conversation</button>
+            </p>
+            <form id="incoming">
+                <div class="form-group">
+                    <textarea class="form-control"></textarea>
+                </div>
+               <p>
+                   <button type="submit" class="btn btn-primary">Register</button>
+               </p>
+            </form>
         </div>
     </div>
 </div>
@@ -38,6 +50,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="simplePeer.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
